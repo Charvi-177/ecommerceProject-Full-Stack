@@ -1,0 +1,124 @@
+/* Checkout.css */
+
+.checkout-page {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.checkout-page h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.checkout-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.checkout-item {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 1rem;
+}
+
+.checkout-item img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.checkout-item-details {
+  flex-grow: 1;
+}
+
+.checkout-item-details h4 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.checkout-item-details p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.checkout-total {
+  text-align: right;
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #222;
+  margin-top: 1rem;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.checkout-form label {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.checkout-form input,
+.checkout-form select {
+  padding: 0.85rem 1.1rem;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 1.3rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.checkout-form input:focus,
+.checkout-form select:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 8px rgba(37,117,252,0.6);
+}
+
+.place-order-btn {
+  margin-top: 2rem;
+  background-color: #2575fc;
+  border: none;
+  color: white;
+  font-size: 1.7rem;
+  padding: 1.2rem 0;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(37,117,252,0.4);
+  transition: background-color 0.3s ease;
+}
+
+.place-order-btn:hover {
+  background-color: #1a54c4;
+}
+
+@media (max-width: 600px) {
+  .checkout-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .checkout-item img {
+    width: 100%;
+    height: auto;
+  }
+}

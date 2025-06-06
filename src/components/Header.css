@@ -1,0 +1,49 @@
+.main-header {
+  background-color: #121212; /* Very dark background */
+  color: #e0e0e0;            /* Light gray text */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #272727;
+}
+
+.logo {
+  font-size: 32px;           /* Bigger logo font */
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 2px;
+  user-select: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: #bbbbbb;
+  font-size: 20px;           /* Larger nav font size */
+  font-weight: 600;
+  margin-left: 40px;         /* More spacing between buttons */
+  cursor: pointer;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.25s ease, border-bottom 0.25s ease;
+}
+
+.nav-links button:hover,
+.nav-links button:focus {
+  color: #00bcd4;            /* Cyan/teal accent */
+  border-bottom: 2px solid #00bcd4;
+  outline: none;
+}
+
+.nav-links button:active {
+  color: #008ba3;
+  border-bottom-color: #008ba3;
+}
